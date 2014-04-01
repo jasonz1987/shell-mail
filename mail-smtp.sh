@@ -29,7 +29,6 @@ smtpport="25"
 user="sender"
 password="123456"
 
-
 mail -s "$subject" -r "$from" -S smtp="smtp://${smtpserver}:${smtpport}" \
                               -S smtp-auth=login \
                               -S smtp-auth-user="$user" \
